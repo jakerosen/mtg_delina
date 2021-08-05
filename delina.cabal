@@ -1,0 +1,19 @@
+cabal-version: 2.4
+
+name: delina
+version: 0
+
+executable delina
+  build-depends:
+    base,
+    random,
+    vector,
+    mtl,
+    monad-loops,
+    lens,
+  default-extensions:
+    BlockArguments
+    ScopedTypeVariables
+  default-language: Haskell2010
+  ghc-options: -Wall
+  main-is: Main.hs
