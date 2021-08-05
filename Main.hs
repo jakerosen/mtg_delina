@@ -14,7 +14,7 @@ main :: IO ()
 main = do
   let maxRolls = 50
       maxIter = 10000
-      startPixies = 3
+      startPixies = 1
   (x, vec) <- activateDelina maxRolls maxIter startPixies
   for_ (Vec.indexed vec) \(i, numToks) -> do
     printf "%d: %d\n" i numToks
